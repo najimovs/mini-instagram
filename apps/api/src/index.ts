@@ -1,4 +1,5 @@
 import Fastify from "fastify"
+import routes from "./routes/index.ts"
 
 const fastify = Fastify( {
 	logger: true,
@@ -12,6 +13,8 @@ fastify.get( "/", () => {
 		message: "OK",
 	}
 } )
+
+fastify.register( routes )
 
 try {
 
