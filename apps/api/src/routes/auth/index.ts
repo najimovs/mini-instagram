@@ -1,6 +1,6 @@
-import join from "./join.ts"
+import { route as joinHandler, schema as joinSchema } from "./join.ts"
 
 export default function( fastify ) {
 
-	fastify.post( "/join", join )
+	fastify.post( "/join", { schema: joinSchema }, joinHandler )
 }
