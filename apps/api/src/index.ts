@@ -2,7 +2,7 @@ import Fastify from "fastify"
 import routes from "./routes/index.ts"
 
 const fastify = Fastify( {
-	logger: true,
+	logger: !true,
 } )
 
 const PORT = parseInt( process.env.VITE_API_PORT ) || 3_100
