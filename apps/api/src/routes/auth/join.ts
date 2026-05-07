@@ -1,4 +1,4 @@
-import { users, query } from "./db.ts"
+import { query } from "../../db.ts"
 
 const bodyJSONSchema = {
 	type: "object",
